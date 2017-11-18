@@ -1,0 +1,38 @@
+Using initialization value for std::vector<T>'s constructor does not 
+    improve its runtime allocation, compared to std::vector<T>::push_back
+
+   Avg total   Min total   Max total  Function
+  ==========  ==========  ==========  ====================================
+  858.323 ms  858.323 ms  858.323 ms  main
+  618.245 ms  618.245 ms  618.245 ms  sortKaway
+  234.795 ms  234.795 ms  234.795 ms  std::sort
+   72.752 us   72.752 us   72.752 us  std::vector::_M_fill_initialize
+   65.788 us   49.551 us   82.026 us  std::vector::vector
+   45.855 us   10.757 us  159.762 us  std::priority_queue::pop
+   43.962 us   10.309 us  158.350 us  std::pop_heap
+   20.292 us   11.387 us   68.629 us  std::vector::_M_emplace_back_aux
+   18.722 us   17.263 us   20.181 us  std::equal
+   18.472 us   18.472 us   18.472 us  std::vector::~vector
+   17.891 us   10.002 us  102.079 us  std::vector::push_back
+   17.823 us   10.467 us   41.181 us  std::vector::empty
+   17.808 us   10.013 us   41.371 us  std::priority_queue::empty
+   17.580 us   10.192 us  101.863 us  std::allocator_traits::construct
+   17.535 us   14.516 us   27.999 us  rand
+   17.427 us   10.725 us   52.715 us  std::priority_queue::top
+   17.382 us   17.382 us   17.382 us  std::_Vector_base::~_Vector_base
+   17.310 us   10.002 us   77.148 us  std::push_heap
+   17.259 us   10.815 us   45.920 us  std::vector::end
+   17.125 us   10.564 us   51.913 us  std::vector::front
+   17.040 us   10.003 us   79.258 us  std::priority_queue::push
+   16.698 us   10.022 us   44.371 us  std::vector::begin
+   16.499 us   14.032 us   27.114 us  std::forward
+   16.400 us   16.400 us   16.400 us  std::_Vector_base::_M_deallocate
+   16.218 us   16.218 us   16.218 us  std::allocator_traits::deallocate
+   16.160 us   12.007 us   20.492 us  std::allocator_traits::destroy
+   16.125 us   16.125 us   16.125 us  std::ios_base::Init::~Init
+   16.047 us   10.105 us   22.710 us  std::vector::pop_back
+   15.787 us   11.177 us   19.207 us  std::vector::operator []
+   15.356 us   11.310 us   17.100 us  std::move
+   14.639 us   14.639 us   14.639 us  std::_Destroy
+   12.634 us   12.634 us   12.634 us  std::_Vector_base::_M_allocate
+   12.417 us   12.417 us   12.417 us  std::allocator_traits::allocate

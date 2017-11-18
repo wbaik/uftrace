@@ -1,0 +1,10 @@
+This was generated with:
+    g++ -std=c++17 -pg ... options
+
+   Avg total   Min total   Max total  Function
+  ==========  ==========  ==========  ====================================
+   87.071 ms   87.071 ms   87.071 ms  main
+   79.831 ms   79.831 ms   79.831 ms  std::sort
+   17.175 us   10.560 us   57.640 us  std::array::operator []
+   17.120 us   14.572 us   23.063 us  rand
+   12.865 us   12.865 us   12.865 us  std::ios_base::Init::~Init

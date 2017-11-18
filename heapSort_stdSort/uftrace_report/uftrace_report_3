@@ -1,0 +1,9 @@
+Result from Array Sorting, without -std=c++17 option
+
+   Avg total   Min total   Max total  Function
+  ==========  ==========  ==========  ====================================
+   84.544 ms   84.544 ms   84.544 ms  main
+   77.456 ms   77.456 ms   77.456 ms  std::sort
+   20.190 us   20.190 us   20.190 us  std::ios_base::Init::~Init
+   18.228 us   15.003 us   32.823 us  std::array::operator []
+   17.556 us   14.507 us   26.122 us  rand

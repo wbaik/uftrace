@@ -1,0 +1,41 @@
+  Total time   Self time       Calls  Function
+  ==========  ==========  ==========  ====================================
+   10.093  s    2.790  s           1  main
+    6.494  s    3.750  s       90114  StableSortList
+    2.382  s    2.144  s       56943  MergeTwoSortedLists
+  476.475 ms   98.280 ms       10455  std::_Sp_counted_base::_M_release
+  451.307 ms    6.477 ms        9321  std::shared_ptr::~shared_ptr
+  427.728 ms    4.735 ms        8496  std::__shared_ptr::~__shared_ptr
+  415.559 ms    3.180 ms        8087  std::__shared_count::~__shared_count
+  294.049 ms   42.497 ms        9417  std::make_shared
+  257.085 ms   15.831 ms        8545  std::shared_ptr::shared_ptr
+  250.174 ms   12.145 ms        8250  std::allocate_shared
+  231.231 ms   45.671 ms        7823  std::__shared_ptr::__shared_ptr
+  141.979 ms   12.739 ms        5028  std::shared_ptr::operator =
+  136.345 ms  113.144 ms        5536  AppendNode
+  103.459 ms    8.522 ms        3742  std::__shared_ptr::operator =
+   86.975 ms   13.870 ms        3194  std::__shared_count::operator =
+    6.337 ms    1.802 ms         227  std::uniform_int_distribution::operator ()
+    4.518 ms    1.129 ms         158  std::_Sp_counted_base::_M_add_ref_copy
+    2.451 ms    2.451 ms          72  std::__shared_ptr::operator ->
+    1.657 ms    1.657 ms          45  std::__shared_ptr::operator (cast)
+    1.441 ms  323.637 us          43  std::__shared_count::__shared_count
+    1.073 ms  486.928 us          37  std::linear_congruential_engine::operator ()
+    1.011 ms  305.388 us          41  ListNode::~ListNode
+  672.611 us  622.341 us          20  std::operator ==
+  610.966 us  610.966 us          14  std::forward
+  605.717 us  554.679 us          14  std::allocator::~allocator
+  586.210 us  545.656 us          24  std::__detail::__mod
+  452.985 us  452.985 us          13  std::uniform_int_distribution::param_type::a
+  445.759 us  365.722 us          18  std::allocator::allocator
+  292.818 us   46.920 us          12  ListNode::ListNode
+  213.240 us  121.907 us           7  std::__shared_ptr::swap
+  210.862 us   46.018 us           8  std::stoi
+   66.311 us   66.311 us           3  std::uniform_int_distribution::param_type::b
+   64.170 us   64.170 us           3  std::basic_string<>::~basic_string<>
+   63.438 us   41.478 us           3  std::uniform_int_distribution::uniform_int_distribution
+   54.610 us   54.610 us           2  operator new
+   24.717 us   24.717 us           1  std::move
+   23.402 us   23.402 us           1  std::numeric_limits::min
+   21.960 us   21.960 us           1  std::uniform_int_distribution::param_type::param_type
+   21.672 us   21.672 us           1  std::basic_string<>::basic_string<>

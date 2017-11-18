@@ -1,0 +1,38 @@
+Running heap_sort vs std::sort
+Originally, I thought using regular std::vector<T>::push_back in initialization 
+    was a bad idea. However, if one uses std::vector<T>, it does look as though
+    giving an initialization value still calls on std::vector<T>::push_back, so
+    not much is gained from doing so.
+
+   Avg total   Min total   Max total  Function
+  ==========  ==========  ==========  ====================================
+  818.625 ms  818.625 ms  818.625 ms  main
+  578.796 ms  578.796 ms  578.796 ms  sortKaway
+  217.913 ms  217.913 ms  217.913 ms  std::sort
+   57.251 us   55.753 us   58.750 us  std::equal
+   43.081 us   10.742 us  133.911 us  std::priority_queue::pop
+   41.382 us   11.242 us  132.387 us  std::pop_heap
+   18.604 us   10.521 us   33.480 us  std::priority_queue::empty
+   18.299 us   10.321 us   33.226 us  std::vector::empty
+   17.944 us   10.224 us   45.796 us  std::vector::push_back
+   17.698 us   10.467 us   37.137 us  std::priority_queue::top
+   17.601 us   10.055 us   28.321 us  std::allocator_traits::construct
+   17.500 us   10.128 us   33.735 us  std::vector::emplace_back
+   17.250 us   17.223 us   17.277 us  std::vector::operator []
+   17.149 us   13.768 us   20.530 us  std::vector::~vector
+   17.067 us   10.240 us   25.960 us  std::vector::front
+   16.954 us   15.005 us   25.495 us  std::vector::end
+   16.867 us   11.329 us   45.525 us  std::vector::_M_emplace_back_aux
+   16.719 us   14.720 us   21.696 us  std::vector::begin
+   16.684 us   16.684 us   16.684 us  std::ios_base::Init::~Init
+   16.580 us   14.766 us   19.202 us  std::allocator_traits::destroy
+   16.578 us   14.544 us   19.400 us  std::vector::pop_back
+   16.560 us   14.829 us   18.248 us  std::move
+   16.422 us   10.031 us   22.443 us  std::forward
+   16.140 us   15.243 us   18.507 us  rand
+   15.972 us   12.709 us   19.235 us  std::_Vector_base::~_Vector_base
+   15.735 us   11.841 us   18.043 us  std::_Vector_base::_M_deallocate
+   15.526 us   11.643 us   17.813 us  std::allocator_traits::deallocate
+   15.369 us   10.065 us   62.950 us  std::push_heap
+   15.002 us   10.000 us   65.097 us  std::priority_queue::push
+   14.254 us   14.254 us   14.254 us  std::vector::vector

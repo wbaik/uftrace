@@ -1,0 +1,5 @@
+g++ -pg -o sortAlmostSorted sortAlmostSorted.cpp;
+uftrace record sortAlmostSorted;
+uftrace report --avg-total -t 5us -N ^_
+                               // ˆˆˆˆˆ exclude __...    
+uftrace report --avg-total -t 10us -N ^_ -N ^std::__

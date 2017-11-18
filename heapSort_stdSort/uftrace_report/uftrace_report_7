@@ -1,0 +1,36 @@
+Using g++ -std=c++17 option
+
+   Avg total   Min total   Max total  Function
+  ==========  ==========  ==========  ====================================
+  822.566 ms  822.566 ms  822.566 ms  main
+  580.189 ms  580.189 ms  580.189 ms  sortKaway
+  219.482 ms  219.482 ms  219.482 ms  std::sort
+   43.275 us   10.033 us  160.213 us  std::priority_queue::pop
+   41.563 us   11.292 us  158.624 us  std::pop_heap
+   21.364 us   19.960 us   22.769 us  std::equal
+   20.059 us   10.795 us   59.117 us  std::priority_queue::empty
+   20.034 us   10.640 us   58.923 us  std::vector::empty
+   19.363 us   14.921 us   62.467 us  std::priority_queue::top
+   19.217 us   14.957 us   62.248 us  std::vector::front
+   19.013 us   12.220 us   52.842 us  std::forward
+   18.911 us   18.813 us   19.010 us  std::_Destroy
+   18.862 us   11.375 us   56.791 us  std::vector::emplace_back
+   18.764 us   10.083 us   78.006 us  std::vector::push_back
+   18.747 us   10.020 us   61.799 us  std::vector::begin
+   18.450 us   15.753 us   30.000 us  rand
+   18.195 us   10.060 us   77.836 us  std::allocator_traits::construct
+   18.003 us   14.312 us   38.992 us  std::vector::end
+   17.659 us   11.000 us   45.225 us  std::vector::_M_emplace_back_aux
+   16.897 us   12.472 us   21.322 us  std::vector::~vector
+   16.553 us   14.646 us   22.027 us  std::move
+   16.504 us   11.975 us   24.500 us  std::vector::pop_back
+   16.082 us   11.805 us   18.298 us  std::allocator_traits::destroy
+   15.895 us   11.417 us   20.374 us  std::_Vector_base::~_Vector_base
+   15.820 us   15.820 us   15.820 us  std::ios_base::Init::~Init
+   15.625 us   14.607 us   16.980 us  std::vector::operator []
+   15.581 us   10.065 us   72.868 us  std::push_heap
+   15.520 us   10.000 us   74.850 us  std::priority_queue::push
+   15.085 us   10.559 us   19.612 us  std::_Vector_base::_M_deallocate
+   14.899 us   10.370 us   19.429 us  std::allocator_traits::deallocate
+   11.128 us   11.128 us   11.128 us  std::_Vector_base::_M_allocate
+   10.932 us   10.932 us   10.932 us  std::allocator_traits::allocate

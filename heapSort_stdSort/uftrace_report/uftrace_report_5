@@ -1,0 +1,33 @@
+   Avg total   Min total   Max total  Function
+  ==========  ==========  ==========  ====================================
+  812.464 ms  812.464 ms  812.464 ms  main
+  572.140 ms  572.140 ms  572.140 ms  sortKaway
+  217.707 ms  217.707 ms  217.707 ms  std::sort
+   42.405 us   11.056 us  137.637 us  std::priority_queue::pop
+   40.668 us   10.905 us  136.103 us  std::pop_heap
+   19.306 us   17.914 us   20.698 us  std::equal
+   18.522 us   14.516 us   61.850 us  std::priority_queue::empty
+   18.433 us   14.346 us   61.669 us  std::vector::empty
+   17.944 us   10.001 us   78.589 us  std::vector::push_back
+   17.940 us   11.552 us   39.969 us  std::vector::emplace_back
+   17.799 us   11.178 us   78.387 us  std::vector::_M_emplace_back_aux
+   17.549 us   10.178 us   36.044 us  std::allocator_traits::construct
+   17.342 us   10.011 us   75.182 us  std::push_heap
+   17.335 us   14.803 us   29.763 us  std::vector::pop_back
+   17.107 us   17.107 us   17.107 us  std::vector::_M_check_len
+   17.095 us   10.612 us   22.165 us  std::priority_queue::top
+   17.074 us   13.592 us   22.003 us  std::vector::front
+   16.995 us   10.000 us   77.043 us  std::priority_queue::push
+   16.904 us   13.274 us   28.967 us  std::vector::end
+   16.802 us   14.793 us   23.731 us  std::allocator_traits::destroy
+   16.718 us   14.178 us   26.675 us  std::vector::begin
+   16.451 us   14.192 us   21.837 us  std::move
+   16.353 us   14.317 us   23.374 us  std::forward
+   16.265 us   15.067 us   22.140 us  rand
+   15.841 us   12.210 us   19.473 us  std::_Vector_base::_M_allocate
+   15.549 us   12.003 us   19.096 us  std::allocator_traits::allocate
+   15.138 us   10.601 us   16.685 us  std::vector::operator []
+   14.578 us   14.578 us   14.578 us  std::vector::size
+   12.324 us   12.324 us   12.324 us  std::ios_base::Init::~Init
+   11.606 us   11.606 us   11.606 us  std::vector::~vector
+   10.710 us   10.710 us   10.710 us  std::_Vector_base::~_Vector_base
