@@ -1,4 +1,4 @@
-## Use`UFTRACE` to compare `std::sort` vs `heap_sort`
+## `UFTRACE`
 
 
 In CppCon 2017, a [talk](https://www.youtube.com/watch?v=s0B8hV2O8ps) about `uftrace` was presented. It looked like a perfect tool to test how fast an implementation of an algorithm is.
