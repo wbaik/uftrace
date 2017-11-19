@@ -20,26 +20,6 @@ uftrace graph -t 20us -N ^_ -N ^std::__
 The current version will produce the following output:
 
 ```
-$ uftrace report --avg-total -t 20us -N ^_ -N ^std::__
-   Avg total   Min total   Max total  Function
-  ==========  ==========  ==========  ====================================
-    4.221 ms    4.221 ms    4.221 ms  main
-    3.997 ms    3.997 ms    3.997 ms  getQueensPlaced
-  203.200 us  203.200 us  203.200 us  printAll
-  123.219 us   21.811 us    3.986 ms  getQueensPlacedSolution
-   48.302 us   33.193 us   83.717 us  print
-   46.868 us   46.868 us   46.868 us  std::vector::pop_back
-   46.556 us   46.556 us   46.556 us  std::allocator_traits::destroy
-   45.591 us   45.591 us   45.591 us  valid
-   35.705 us   23.611 us   48.008 us  std::vector::emplace_back
-   31.839 us   21.742 us   47.498 us  std::vector::_M_emplace_back_aux
-   24.710 us   24.710 us   24.710 us  std::allocator_traits::construct
-   23.477 us   21.965 us   24.990 us  std::vector::push_back
-   23.224 us   23.224 us   23.224 us  std::operator <<
-   20.128 us   20.128 us   20.128 us  std::vector::~vector
-```
-
-```
 # Function Call Graph for 'main' (session: a5cd9e4a733281b1)
 =============== BACKTRACE ===============
  backtrace #0: hit 1, time   4.221 ms
